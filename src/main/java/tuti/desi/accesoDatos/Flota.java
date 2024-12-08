@@ -18,6 +18,11 @@ public class Flota {
 	
 	private Long Id;
 	
+<<<<<<< HEAD
+=======
+	private String nombre;
+	
+>>>>>>> 95c730d (agrego)
 	@OneToMany
 	private List<Camion> camiones;
 
@@ -25,9 +30,16 @@ public class Flota {
 	public Flota() {
 	}
 
+<<<<<<< HEAD
 	public Flota(Long id, List<Camion> camiones) {
 		Id = id;
 		this.camiones = camiones;
+=======
+	public Flota(Long id, List<Camion> camiones, String nombre) {
+		Id = id;
+		this.camiones = camiones;
+		this.nombre = nombre;
+>>>>>>> 95c730d (agrego)
 	}
 
 	public Long getId() {
@@ -45,6 +57,7 @@ public class Flota {
 	public void setCamiones(List<Camion> camiones) {
 		this.camiones = camiones;
 	}
+<<<<<<< HEAD
 
 	@Override
 	public String toString() {
@@ -52,5 +65,22 @@ public class Flota {
 	}
 
 	
+=======
+	
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	@Override
+	public String toString() {
+		return "Flota [Id=" + Id + ", nombre=" + nombre + ", camiones=" + camiones + "]";
+	}
+
+>>>>>>> 95c730d (agrego)
 
 }

@@ -1,5 +1,11 @@
 package tuti.desi.servicios;
 
+<<<<<<< HEAD
+=======
+import java.util.List;
+import java.util.Optional;
+
+>>>>>>> 95c730d (agrego)
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -27,8 +33,33 @@ public class CamionService {
 		camion.setMarca(marca);
 		camion.setModelo(modelo);
 		
+<<<<<<< HEAD
 		camionRepositorio.save(camion);  //llamamos al metodo save que recibe una entidad por parametro y la persiste en la BDD
 	}
 
 }
 	
+=======
+		 if (flota != null) {
+	            camion.setFlota(flota);
+	     }
+		
+		camionRepositorio.save(camion);  //llamamos al metodo save que recibe una entidad por parametro y la persiste en la BDD
+		
+		}
+		 // Obtener todos los camiones
+	    public List<Camion> obtenerTodosLosCamiones() {
+	        return camionRepositorio.findAll();
+	    }
+
+	    // Buscar camiones por ciudad
+	    public List<Camion> buscarPorCiudad(Ciudad ciudad) {
+	        return camionRepositorio.findByCiudad(ciudad);
+	    }
+
+	    // Buscar camiones por flota
+	    public List<Camion> buscarPorFlota(Flota flota) {
+	        return camionRepositorio.findByFlota(flota);
+	    }
+	}
+>>>>>>> 95c730d (agrego)

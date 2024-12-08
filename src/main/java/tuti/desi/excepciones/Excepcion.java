@@ -2,7 +2,11 @@ package tuti.desi.excepciones;
 
 public class Excepcion extends Exception {
 
+<<<<<<< HEAD
     // Constructor sin parámetros
+=======
+    // Constructor sin parametros
+>>>>>>> 95c730d (agrego)
     public Excepcion() {
         super();
     }
@@ -12,7 +16,11 @@ public class Excepcion extends Exception {
         super(message);
     }
 
+<<<<<<< HEAD
     // Constructor con mensaje y causa (puede ser útil para depuración)
+=======
+    // Constructor con mensaje y causa 
+>>>>>>> 95c730d (agrego)
     public Excepcion(String message, Throwable cause) {
         super(message, cause);
     }

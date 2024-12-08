@@ -2,6 +2,10 @@ package tuti.desi.accesoDatos;
 
 import java.util.List;
 
+<<<<<<< HEAD
+=======
+import jakarta.persistence.Column;
+>>>>>>> 95c730d (agrego)
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -12,6 +16,7 @@ import jakarta.persistence.Table;
 @Entity
 @Table(name = "provincia")
 public class Provincia {
+<<<<<<< HEAD
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -21,6 +26,17 @@ public class Provincia {
 	
 	@OneToMany(mappedBy = "provincia")
 	private List<Ciudad> ciudades;
+=======
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    @Column(name = "nombre")
+    private String nombre;
+
+    @OneToMany(mappedBy = "provincia")
+    private List<Ciudad> ciudades;
+>>>>>>> 95c730d (agrego)
 
 	public Provincia() {
 	}
